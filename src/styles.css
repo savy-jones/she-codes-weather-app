@@ -21,13 +21,19 @@ p {
 }
 
 #c-f {
+  color: rgb(61, 5, 157);
   font-weight: 100;
   font-size: 0.7rem;
   margin-left: 5px;
 }
-#c-f a {
-  color: rgb(103, 56, 183);
+.c-f .active {
+  color: black;
+  cursor: default;
 }
+.c-f .active:hover {
+  text-decoration: none;
+}
+
 h6 {
   margin-bottom: 0;
   font-weight: 700;
