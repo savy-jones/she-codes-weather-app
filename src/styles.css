@@ -60,10 +60,11 @@ h6 {
 #current-temp {
   margin-left: 42px;
 }
-.weather-description {
+#weather-description {
   margin-top: 0px;
   margin-bottom: 45px;
   font-size: 1.15rem;
+  text-transform: capitalize;
 }
 
 .icon {
