@@ -25,103 +25,112 @@
   <body>
     <div class="container">
       <div class="card">
-        <div class="city-search">
-          <form id="search-field">
-            <div class="row search-bar">
-              <div class="input-group">
-                <input
-                  type="search"
-                  class="form-control input-city"
-                  placeholder="Enter Your City"
-                  autofocus="on"
-                  autocomplete="off"
-                  id="city-input"
-                />
-                <div class="input-group-append" id="button-addon4">
-                  <button
-                    class="btn btn-outline-secondary search-button"
-                    type="submit"
+        <form id="search-field">
+          <div class="row search-bar">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control input-city"
+                placeholder="Enter Your City"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+              />
+              <div class="input-group-append" id="button-addon4">
+                <button
+                  class="btn btn-outline-secondary search-button"
+                  type="submit"
+                >
+                  Search
+                </button>
+                <button
+                  class="btn btn-outline-secondary current-location-button"
+                  type="button"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-content">
+            <div id="middle" class="row align-items-center">
+              <div class="col city-date-temp">
+                <h1 id="city"></h1>
+                <p id="current-date"></p>
+                <h2 id="current-temp">
+                  <span id="temperature"></span
+                  ><span id="c-f">
+                    <a href="#" id="fahrenheit-link">°F </a> |
+                    <a href="#" id="celsius-link">°C</a></span
                   >
-                    Search
-                  </button>
-                  <button
-                    class="btn btn-outline-secondary current-location-button"
-                    type="button"
-                    id="current-location-button"
-                  >
-                    Current
-                  </button>
-                </div>
+                </h2>
+              </div>
+              <div class="col">
+                <div class="icon">🌤️</div>
+                <p class="weather-description">Partly Cloudy</p>
+              </div>
+              <div class="col metrics">
+                <p>
+                  Low:
+                  <span id="metrics-style"><span id="low-temp"> </span>°</span>
+                  | High:
+                  <span id="metrics-style"><span id="high-temp"> </span>°</span>
+                </p>
+                <p>
+                  Wind Speed:
+                  <span id="metrics-style"><span id="wind"></span> mph</span>
+                </p>
+                <p>
+                  Humidity:
+                  <span id="metrics-style"><span id="humidity"></span>%</span>
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="middle-content">
-              <div id="middle" class="row align-items-center">
-                <div class="col city-date-temp">
-                  <h1 id="city"></h1>
-                  <p id="current-date"></p>
-                  <h2 id="current-temp">
-                    <span id="temperature"></span>°<span id="c-f">
-                      <a href="#" id="fahrenheit-link">F</a> |
-                      <a href="#" id="celsius-link">C</a></span
-                    >
-                  </h2>
-                </div>
-                <div class="col">
-                  <div class="icon">🌤️</div>
-                  <p class="weather-description">Partly Cloudy</p>
-                </div>
-                <div class="col metrics">
-                  <p>
-                    Low: <span id="low-temp"> </span>° | High:
-                    <span id="high-temp"> </span>°
-                  </p>
-                  <p>Wind Speed: <span id="wind"></span> mph</p>
-                  <p>Humidity: <span id="humidity"></span>%</p>
-                </div>
+          <div class="bottom-week-weather">
+            <div class="row">
+              <div class="col">
+                <h6>Sat</h6>
+                <div class="forcast-icons">☀️</div>
+                <p>40°/ 60°</p>
+              </div>
+
+              <div class="col">
+                <h6>Sun</h6>
+                <div class="forcast-icons">🌥️</div>
+                <p>40°/ 60°</p>
+              </div>
+
+              <div class="col">
+                <h6>Mon</h6>
+                <div class="forcast-icons">🌦️</div>
+                <p>40°/ 60°</p>
+              </div>
+
+              <div class="col">
+                <h6>Tues</h6>
+                <div class="forcast-icons">🌧️</div>
+                <p>40°/ 60°</p>
+              </div>
+
+              <div class="col">
+                <h6>Thurs</h6>
+                <div class="forcast-icons">⛈️</div>
+                <p>40°/ 60°</p>
               </div>
             </div>
-
-            <div class="bottom-week-weather">
-              <div class="row">
-                <div class="col">
-                  <h6>Sat</h6>
-                  <div class="forcast-icons">☀️</div>
-                  <p>40°/ 60°</p>
-                </div>
-
-                <div class="col">
-                  <h6>Sun</h6>
-                  <div class="forcast-icons">🌥️</div>
-                  <p>40°/ 60°</p>
-                </div>
-
-                <div class="col">
-                  <h6>Mon</h6>
-                  <div class="forcast-icons">🌦️</div>
-                  <p>40°/ 60°</p>
-                </div>
-
-                <div class="col">
-                  <h6>Tues</h6>
-                  <div class="forcast-icons">🌧️</div>
-                  <p>40°/ 60°</p>
-                </div>
-
-                <div class="col">
-                  <h6>Thurs</h6>
-                  <div class="forcast-icons">⛈️</div>
-                  <p>40°/ 60°</p>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
 
-    <a href="https://github.com/savy-jones" class="github-link">
-      My GitHub Repository</a
+    <small
+      ><a href="https://github.com/savy-jones" class="github-link"
+        >Open-source code</a
+      ><span> by Savana Jones</span></small
     >
 
     <script src="src/index.js"></script>
