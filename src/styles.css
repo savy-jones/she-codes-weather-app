@@ -88,4 +88,5 @@ h6 {
 .github-link {
   color: black;
   margin: 40px;
+  text-decoration: underline;
 }
