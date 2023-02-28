@@ -71,22 +71,24 @@
                 <div>
                   <img id="icon" class="icon" src="" alt="" />
                 </div>
-                <p id="weather-description">Partly Cloudy</p>
+                <p id="weather-description"></p>
               </div>
               <div class="col metrics">
                 <p>
                   Low:
-                  <span id="metrics-style"><span id="low-temp"> </span>°</span>
+                  <span id="low-temp"> </span>
                   | High:
-                  <span id="metrics-style"><span id="high-temp"> </span>°</span>
+                  <span id="high-temp"> </span>
                 </p>
                 <p>
                   Wind Speed:
-                  <span id="metrics-style"><span id="wind"></span> mph</span>
+                  <span class="metrics-style"><span id="wind"></span> mph</span>
                 </p>
                 <p>
                   Humidity:
-                  <span id="metrics-style"><span id="humidity"></span>%</span>
+                  <span class="metrics-style"
+                    ><span id="humidity"></span>%</span
+                  >
                 </p>
               </div>
             </div>
@@ -96,32 +98,47 @@
             <div class="row">
               <div class="col">
                 <h6>Sat</h6>
-                <div class="forcast-icons">☀️</div>
-                <p>40°/ 60°</p>
+                <div class="forecast-icons">☀️</div>
+                <p>
+                  <span class="forecast-low">40°</span>|
+                  <span class="forecast-high">60°</span>
+                </p>
               </div>
 
               <div class="col">
                 <h6>Sun</h6>
-                <div class="forcast-icons">🌥️</div>
-                <p>40°/ 60°</p>
+                <div class="forecast-icons">🌥️</div>
+                <p>
+                  <span class="forecast-low">40°</span>|
+                  <span class="forecast-high">60°</span>
+                </p>
               </div>
 
               <div class="col">
                 <h6>Mon</h6>
-                <div class="forcast-icons">🌦️</div>
-                <p>40°/ 60°</p>
+                <div class="forecast-icons">🌦️</div>
+                <p>
+                  <span class="forecast-low">40°</span>|
+                  <span class="forecast-high">60°</span>
+                </p>
               </div>
 
               <div class="col">
                 <h6>Tues</h6>
-                <div class="forcast-icons">🌧️</div>
-                <p>40°/ 60°</p>
+                <div class="forecast-icons">🌧️</div>
+                <p>
+                  <span class="forecast-low">40°</span>|
+                  <span class="forecast-high">60°</span>
+                </p>
               </div>
 
               <div class="col">
                 <h6>Thurs</h6>
-                <div class="forcast-icons">⛈️</div>
-                <p>40°/ 60°</p>
+                <div class="forecast-icons">⛈️</div>
+                <p>
+                  <span class="forecast-low">40°</span>|
+                  <span class="forecast-high">60°</span>
+                </p>
               </div>
             </div>
           </div>
@@ -132,7 +149,7 @@
     <small
       ><a href="https://github.com/savy-jones" class="github-link"
         >Open-source code</a
-      ><span> by Savana Jones</span></small
+      ><span> Vanilla Weather App by Savana Jones</span></small
     >
 
     <script src="src/index.js"></script>

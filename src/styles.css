@@ -42,7 +42,7 @@ h6 {
   margin: 1px;
 }
 
-.forcast-icons {
+.forecast-icons {
   font-size: 30px;
 }
 
@@ -98,7 +98,7 @@ h6 {
   background: rgba(255, 255, 255, 0.733);
   margin: 40px;
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 30px 55px;
 }
 .input-city {
@@ -110,6 +110,19 @@ h6 {
 }
 .bottom-week-weather p {
   margin-bottom: 0px;
+}
+.forecast-high {
+  color: rgb(149, 31, 60);
+}
+.forecast-low {
+  color: rgb(51, 51, 189);
+}
+#low-temp {
+  color: rgb(51, 51, 189);
+}
+
+#high-temp {
+  color: rgb(149, 31, 60);
 }
 
 .github-link {
@@ -123,6 +136,6 @@ small {
   padding-bottom: 40px;
 }
 
-#metrics-style {
+.metrics-style {
   color: rgb(103, 56, 183);
 }
