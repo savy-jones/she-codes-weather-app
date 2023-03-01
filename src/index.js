@@ -51,9 +51,9 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `<div class="col" >
-                <div class="forecast-day">${formatForecastDay(
+                <div class="forecast-day"><h6>${formatForecastDay(
                   forecastDay.dt
-                )}</div>
+                )}</h6></div>
                 <div>
                 
                 <img class="forecast-icons" src="http://openweathermap.org/img/wn/${
@@ -134,27 +134,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let fahrenheitTemperature = parseInt(temperatureElement.innerHTML);
-  let celsiusTemperature = (fahrenheitTemperature - 32) * (5 / 9);
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-function displayFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let celsiusTemperature = parseInt(temperatureElement.innerHTML);
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
 //let apiKey = "197ef3a642b76eef90e131866f74a0a0";
 //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 //axios.get(apiUrl).then(displayWeather);
@@ -164,11 +143,5 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let searchField = document.querySelector("#search-field");
 searchField.addEventListener("submit", handleSubmit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 searchCity("New York");

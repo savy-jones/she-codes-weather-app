@@ -21,17 +21,11 @@ p {
 }
 
 #c-f {
-  color: rgb(61, 5, 157);
   font-weight: 100;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-left: 5px;
-}
-.c-f .active {
-  color: black;
-  cursor: default;
-}
-.c-f .active:hover {
-  text-decoration: none;
+  position: relative;
+  top: -12px;
 }
 
 h6 {
@@ -64,7 +58,7 @@ h6 {
 }
 
 #current-temp {
-  margin-left: 42px;
+  margin-left: 20px;
 }
 #weather-description {
   margin-top: 0px;
