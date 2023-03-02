@@ -68,9 +68,11 @@ h6 {
 }
 
 .icon {
-  font-size: 90px;
   margin-top: 25px;
+  margin-bottom: 10px;
   line-height: 120px;
+  border-radius: 55px;
+  background: #bad5f1ba;
 }
 .metrics {
   line-height: 34px;
