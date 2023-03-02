@@ -31,13 +31,11 @@ p {
 h6 {
   margin-bottom: 0;
   font-weight: 700;
+  opacity: 0.8;
+  letter-spacing: 1px;
 }
 .searh-bar {
   margin: 1px;
-}
-
-.forecast-icons {
-  font-size: 30px;
 }
 
 .middle-content {
@@ -62,20 +60,31 @@ h6 {
 }
 #weather-description {
   margin-top: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   font-size: 1.15rem;
   text-transform: capitalize;
 }
 
-.icon {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  line-height: 120px;
+.forecast-icons {
   border-radius: 55px;
-  background: #bad5f1ba;
+  background: rgba(150, 153, 161, 0.2);
+  box-shadow: 3px 2px 3px rgb(0 0 0 / 12%);
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+}
+.icon {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 2px;
+  height: 90px;
+  width: 90px;
+  border-radius: 55px;
+  background: rgba(110, 112, 118, 0.2);
 }
 .metrics {
-  line-height: 34px;
+  line-height: 37px;
   margin-top: 12px;
   margin-bottom: 0px;
   margin-right: 15px;
@@ -113,6 +122,7 @@ h6 {
 .forecast-low {
   color: rgb(51, 51, 189);
 }
+
 #low-temp {
   color: rgb(51, 51, 189);
 }
